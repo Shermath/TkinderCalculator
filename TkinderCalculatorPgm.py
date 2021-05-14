@@ -1,7 +1,16 @@
 from tkinter import *
 
 window = Tk()
-window.geometry("500x500")
+
+windowWidth = window.winfo_reqwidth()
+windowHeight = window.winfo_reqheight()
+print("Width",windowWidth,"Height",windowHeight)
+
+positionRight = int(window.winfo_screenwidth()/2 - windowWidth/2)
+positionDown = int(window.winfo_screenheight()/2 - windowHeight/2)
+
+#window.geometry("500x600")
+window.geometry("+{}+{}".format(positionRight, positionDown))
 window.title("Calculator")
 window.configure(bg="green")
 
