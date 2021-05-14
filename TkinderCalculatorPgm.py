@@ -10,7 +10,7 @@ def hello():
     print("Clicked")
 
 
-button1 = Button(text="ok", command=hello, width=10, height=10, bg="red", fg="red")
+button1 = Button(text="ok", command=hello, width=10, height=10, bg="red", fg="green")
 button2 = Button(text="ok", command=hello, width=10, height=10, bg="red", fg="red")
 
 button1.grid(row=0, column=0)
